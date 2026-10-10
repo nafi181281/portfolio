@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nafi Ul Sheak — Software Engineer & Full-Stack Developer</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Header & Navigation -->
     <header class="site-header">
         <div class="container nav-container">
-            <a href="#" class="logo">NAFI<span class="highlight"> UL SHEAK</span></a>
-            <nav class="nav-menu">
+            <!-- Logo with Image & Name -->
+            <a href="#" class="logo">
+    <img src="https://cdn.imgpile.com/f/riIV7jv_lg.webp" alt="Nafi Ul Sheak Logo" class="logo-img">
+    <span class="logo-text">NAFI<span class="highlight"> UL SHEAK</span></span>
+</a>
+            <nav class="nav-menu" aria-label="Main Navigation">
                 <ul>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about-dev">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -30,8 +30,8 @@
 
     <main>
 
-        <!-- Hero Section with Profile Picture -->
-        <section class="hero" id="about">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
             <div class="container hero-container">
                 <div class="hero-content">
                     <div class="status-badge">
@@ -48,28 +48,48 @@
                     </div>
                 </div>
 
-                <!-- Profile Picture Placeholder -->
-                <div class="hero-visual">
-                    <div class="profile-frame">
-                        <img src="https://cdn.imgpile.com/f/4SaT0ZR_lg.jpeg" alt="Nafi Ul Sheak" class="profile-img">
-                        <div class="frame-backdrop"></div>
-                        <div class="experience-badge">
-                            <span class="badge-number">3+</span>
-                            <span class="badge-text">Years Experience</span>
-                        </div>
+               <!-- Profile Picture -->
+<div class="hero-visual">
+    <div class="profile-frame">
+        <img src="https://cdn.imgpile.com/f/4SaT0ZR_lg.jpeg" alt="Nafi Ul Sheak" class="profile-img">
+        <div class="frame-backdrop"></div>
+    </div>
+</div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section alt-bg" id="about-dev">
+            <div class="container">
+                <header class="section-title">
+                    <span class="section-tag">Philosophy & Background</span>
+                    <h2>About the Developer</h2>
+                    <p class="section-subtitle-lead">Built for Speed, Engineered for Longevity</p>
+                </header>
+                
+                <article class="about-card">
+                    <h3 class="about-statement">
+                        Delivering high-end web applications with uncompromising performance, semantic integrity, and meticulous design precision.
+                    </h3>
+                    <div class="about-body">
+                        <p>
+                            I am <strong>Nafi Ul Sheak</strong>, a seasoned web developer dedicated to building fast, scalable, and resilient digital experiences. With over 6 years in web engineering, I treat frontend development not merely as visual styling, but as a rigorous software discipline.
+                        </p>
+                        <p>
+                            My approach unites clean semantic markup, modular CSS architectures, and robust system patterns. Whether collaborating with ambitious startups or scaling high-traffic enterprise platforms, I eliminate bloat and craft experiences that users remember and search engines reward.
+                        </p>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
 
         <!-- Experience & Education Section -->
         <section class="section" id="experience">
             <div class="container">
-                <div class="section-title">
+                <header class="section-title">
                     <span class="section-tag">Career Pathway</span>
                     <h2>Experience & Education</h2>
                     <p>My professional background and academic foundation.</p>
-                </div>
+                </header>
                 
                 <div class="timeline-grid">
                     <!-- Experience Column -->
@@ -77,13 +97,13 @@
                         <h3 class="column-header">Work Experience</h3>
                         <div class="timeline">
                             <article class="timeline-card">
-                                <span class="timeline-date">2026 — PRESENT</span>
+                                <time class="timeline-date" datetime="2026">2026 — PRESENT</time>
                                 <h4>Lead Full-Stack Developer</h4>
                                 <span class="timeline-company">TechCore Innovations</span>
                                 <p>Architecting web systems, developing backend REST APIs, and leading frontend design initiatives using Next.js, Node.js, and TypeScript.</p>
                             </article>
                             <article class="timeline-card">
-                                <span class="timeline-date">2022 — 2024</span>
+                                <time class="timeline-date" datetime="2022/2024">2022 — 2024</time>
                                 <h4>Frontend Engineer</h4>
                                 <span class="timeline-company">Nexus Digital Labs</span>
                                 <p>Engineered interactive user interfaces, optimized page load speeds, and integrated state management setups using React and Tailwind CSS.</p>
@@ -96,15 +116,15 @@
                         <h3 class="column-header">Education</h3>
                         <div class="timeline">
                             <article class="timeline-card">
-                                <span class="timeline-date">2024 — 2027</span>
+                                <time class="timeline-date" datetime="2024/2027">2024 — 2027</time>
                                 <h4>B.Sc. in Computer Science & Engineering</h4>
-                                <span class="timeline-company"> Pundra University Institute of Technology</span>
+                                <span class="timeline-company">Pundra University of Science & Technology</span>
                                 <p>Specialized in Data Structures, Algorithms, Software Architecture, Machine Learning basics, and Database Management Systems.</p>
                             </article>
                             <article class="timeline-card">
-                                <span class="timeline-date">2021 — 2023</span>
+                                <time class="timeline-date" datetime="2021/2023">2021 — 2023</time>
                                 <h4>Higher Secondary Certificate (Science)</h4>
-                                <span class="timeline-company">Government Sha Sultan College,Bogura</span>
+                                <span class="timeline-company">Government Shah Sultan College, Bogura</span>
                                 <p>Focused on Higher Mathematics, Physics, and Computer Studies with strong academic performance.</p>
                             </article>
                         </div>
@@ -116,15 +136,15 @@
         <!-- Skills Section -->
         <section class="section alt-bg" id="skills">
             <div class="container">
-                <div class="section-title">
+                <header class="section-title">
                     <span class="section-tag">Expertise</span>
                     <h2>Technical Skills</h2>
                     <p>Tools, frameworks, and languages I use to build scalable solutions.</p>
-                </div>
+                </header>
                 
                 <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">🎨</div>
+                    <article class="skill-card">
+                        <div class="skill-icon" aria-hidden="true">🎨</div>
                         <h4>Frontend Architecture</h4>
                         <div class="skill-tags">
                             <span>HTML5 / CSS3</span>
@@ -134,10 +154,10 @@
                             <span>Next.js</span>
                             <span>Tailwind CSS</span>
                         </div>
-                    </div>
+                    </article>
                     
-                    <div class="skill-card">
-                        <div class="skill-icon">⚡</div>
+                    <article class="skill-card">
+                        <div class="skill-icon" aria-hidden="true">⚡</div>
                         <h4>Backend & Database</h4>
                         <div class="skill-tags">
                             <span>Node.js</span>
@@ -147,10 +167,10 @@
                             <span>MongoDB</span>
                             <span>Prisma ORM</span>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="skill-card">
-                        <div class="skill-icon">🛠️</div>
+                    <article class="skill-card">
+                        <div class="skill-icon" aria-hidden="true">🛠️</div>
                         <h4>Tools & DevOps</h4>
                         <div class="skill-tags">
                             <span>Git / GitHub</span>
@@ -160,7 +180,7 @@
                             <span>Figma (UI/UX)</span>
                             <span>Postman</span>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -168,47 +188,47 @@
         <!-- Projects Section -->
         <section class="section" id="projects">
             <div class="container">
-                <div class="section-title">
+                <header class="section-title">
                     <span class="section-tag">Portfolio</span>
                     <h2>Featured Work</h2>
                     <p>A selection of recent full-stack applications and projects.</p>
-                </div>
+                </header>
                 
                 <div class="projects-grid">
                     <article class="project-card">
-                        <div class="project-header">
+                        <header class="project-header">
                             <span class="project-category">Full-Stack Web App</span>
                             <span class="badge-sm">Next.js</span>
-                        </div>
+                        </header>
                         <h3>DevMatrix Analytics</h3>
                         <p>Developer metrics and repository management system featuring real-time insights, build status tracking, and performance analytics.</p>
-                        <div class="project-footer">
+                        <footer class="project-footer">
                             <span class="tech-stack">TypeScript • React • Node.js</span>
-                        </div>
+                        </footer>
                     </article>
 
                     <article class="project-card">
-                        <div class="project-header">
+                        <header class="project-header">
                             <span class="project-category">SaaS Platform</span>
                             <span class="badge-sm">React</span>
-                        </div>
+                        </header>
                         <h3>PulseTask Workspace</h3>
                         <p>Team collaboration software with kanban boards, active task tracking, and automated workflow integrations for software engineers.</p>
-                        <div class="project-footer">
+                        <footer class="project-footer">
                             <span class="tech-stack">React • Express • MongoDB</span>
-                        </div>
+                        </footer>
                     </article>
 
                     <article class="project-card">
-                        <div class="project-header">
+                        <header class="project-header">
                             <span class="project-category">AI Integration</span>
                             <span class="badge-sm">API</span>
-                        </div>
+                        </header>
                         <h3>Nexus AI Assistant</h3>
                         <p>Smart documentation search assistant powered by generative AI models, vector search, and Markdown rendering support.</p>
-                        <div class="project-footer">
+                        <footer class="project-footer">
                             <span class="tech-stack">JavaScript • Tailwind • REST API</span>
-                        </div>
+                        </footer>
                     </article>
                 </div>
             </div>
@@ -217,14 +237,14 @@
         <!-- Contact Section -->
         <section class="section alt-bg" id="contact">
             <div class="container contact-container">
-                <div class="section-title">
+                <header class="section-title">
                     <span class="section-tag">Get In Touch</span>
                     <h2>Let's Work Together</h2>
                     <p>Have a project in mind or want to talk about opportunities? Drop a message.</p>
-                </div>
+                </header>
                 
                 <div class="contact-card">
-                    <div class="contact-info">
+                    <address class="contact-info">
                         <h3>Contact Details</h3>
                         <p>I am open for full-time engineering roles, freelance software contracts, and technical advisory.</p>
                         
@@ -234,28 +254,30 @@
                         </div>
                         <div class="info-item">
                             <span class="info-label">Location</span>
-                            <span class="info-value">Bogura , Bangladesh</span>
+                            <span class="info-value">Bogura, Bangladesh</span>
                         </div>
                         <div class="info-item">
                             <span class="info-label">Profiles</span>
                             <div class="social-links">
-                                <a href="https://github.com/nafi181281">GitHub</a> • <a href="https://www.linkedin.com/in/nafiul-sheak-887285351/">LinkedIn</a> • <a href="https://www.youtube.com/@CODEWITHSHEAK">YouTube</a>
+                                <a href="https://github.com/nafi181281" target="_blank" rel="noreferrer">GitHub</a> • 
+                                <a href="https://www.linkedin.com/in/nafiul-sheak-887285351/" target="_blank" rel="noreferrer">LinkedIn</a> • 
+                                <a href="https://www.youtube.com/@CODEWITHSHEAK" target="_blank" rel="noreferrer">YouTube</a>
                             </div>
                         </div>
-                    </div>
+                    </address>
 
                     <form class="contact-form" action="#" method="POST">
                         <div class="form-group">
                             <label for="name">Your Name</label>
-                            <input type="text" id="name" placeholder="John Doe" required>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Your Email</label>
-                            <input type="email" id="email" placeholder="john@example.com" required>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" rows="4" placeholder="Hello Nafi, I'd like to discuss a project..." required></textarea>
+                            <textarea id="message" name="message" rows="4" placeholder="Hello Nafi, I'd like to discuss a project..." required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary full-width">Send Message</button>
                     </form>
@@ -269,7 +291,7 @@
     <footer class="site-footer">
         <div class="container footer-container">
             <p>&copy; 2026 Nafi Ul Sheak. All rights reserved.</p>
-            <p class="footer-subtext">Designed with Modern Black & Teal Design Tokens.</p>
+            <p class="footer-subtext">Crafted with Forest Green & Off-White Serif Design Tokens.</p>
         </div>
     </footer>
 
